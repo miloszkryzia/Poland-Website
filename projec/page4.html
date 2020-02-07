@@ -1,0 +1,49 @@
+<html>
+    <link href="page2.css" rel="stylesheet" type="text/css">
+    <head>
+        <title>Language</title>
+        <script>
+            function startTime() {
+             var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+              var s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =
+              h + ":" + m + ":" + s;
+              var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+        </script>
+    </head>
+    <body onload="startTime()" style="background-color:#610B0B">
+        <div id="txt"></div>
+        <form action="projec.html" method="get">
+            <button class="home" type="submit">Home</button>
+        </form>
+        
+        <h1 class="head">The Polish Language</h1>
+        <h1 class="head">J&#281zyk Polski</h1>
+        <h1>Polish is an indoeuropean slavic language.</h1>
+        <h1>That means it is similar to languages like Russian or Ukrainian.</h1>
+        <h1>It uses the Latin script, same as English or Spanish,</h1>
+        <h1>with several additional letters: &#261, &#263, &#281, &#322, &#324, &oacute, &#347, &#378, &#380.</h1>
+        <h1>Polish is considered to be one of the hardest languages to learn, beacuse of its</h1>
+        <h1>many conjugations, complicated spelling and difficult pronunciation.</h1>
+        <h1>For example:</h1>
+        <h1 class="words">"ruthless" - "bezwzgl&#281dny"</h1>
+        <h1 class="words">"happiness" - "szcz&#281&#347cie"</h1>
+        <h1>There are many words that should be easy to pronounce for Spanish speakers though.</h1>
+        <img src="prosze.jpeg" class="prosze">
+        
+        <form action="page2.html" method="get"> 
+            <button class="location" type="submit">Location</button>
+            <button class="cities" type="submit" formaction="page3.html">Biggest cities</button>
+            <button class="language" type="submit" formaction="page4.html">Language</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+    <link href="page2.css" rel="stylesheet" type="text/css">
+    <head>
+        <title>Poland's Biggest Cities</title>
+        <script>
+            function startTime() {
+             var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+              var s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =
+              h + ":" + m + ":" + s;
+              var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+        </script>
+    </head>
+    <body onload="startTime()" style="background-color:#610B0B">
+        <div id="txt"></div>
+        <form action="projec.html" method="get">
+            <button class="home" type="submit">Home</button>
+        </form>
+        
+        
+        <h1 class="head">Poland's Biggest Cities</h1>
+        <h1 class="city">Warsaw (Warszawa)</h1>
+        <h1>Warsaw is Poland's capital and largest city. </h1>
+        <h1>It is also the 7th largest city in the European Union</h1>
+        <h1>Warsaw is a major tourist destination and cultural center in Europe.</h1>
+        <img src="warsaw.jpeg">
+        
+        <h1 class="city">Cracow (Krak&oacutew)</h1>
+        <h1>Cracow is one of Poland's oldest cities.</h1>
+        <h1>It used to be its capital.</h1>
+        <h1>Cracow is another major tourist destinantion in Poland</h1>
+        <h1>and it has traditionally been the country's leading</h1>
+        <h1>academic, cultural and artistic life.</h1>
+        <img src="cracow.jpeg">
+        
+        <h1 class="city">Tricity (Tr&oacutejmiasto)</h1>
+        <h1>The Tricity actually consists of three major cities:</h1>
+        <h1>Gdansk, Gdynia and Sopot.</h1>
+        <h1>It's an important center of education and</h1>
+        <h1>another popular destination for tourists.</h1>
+        <img src="tricity.jpg">
+        
+        <h1 class="city">Katowice</h1>
+        <h1>Katowice is a city in Southern Poland.</h1>
+        <h1>It's a part of a large metropolis which also includes</h1>
+        <h1>My hometown, D&#261browa G&oacuternicza.</h1>
+        <h1>The city itself and surrounding area is a major industrial center</h1>
+        <h1>of the country. The city also serves as a host of many eSports events.</h1>
+        <h1>The biggest two are the ESL Katowice Tournament and</h1>
+        <h1>Intel Extreme Masters World Championship, one of the biggest events of this kind in the world.</h1>
+        <img src="katowice.jpg">
+        
+        <form action="page2.html" method="get"> 
+            <button class="location" type="submit">Location</button>
+            <button class="cities" type="submit" formaction="page3.html">Biggest cities</button>
+            <button class="language" type="submit" formaction="page4.html">Language</button>
+        </form>
+    </body>
+</html>

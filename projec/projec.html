@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <link href="project.css" rel="stylesheet" type="text/css">
+    <head>
+        <meta charset="utf-8">
+        <title>Poland</title>
+          <script>
+            function startTime() {
+             var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+              var s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =
+              h + ":" + m + ":" + s;
+              var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+        </script>
+    </head>
+   
+    <body onload="startTime()" style="background-color:#610B0B;">
+        <div id="txt"></div>
+        <h1 class="head">Welcome!</h1>
+        <h1>My name is Mi&#322osz</h1>
+        <h1>and I'm from Poland.</h1>
+        <img src="myAvatar.png">
+        <img src="polishflag.jpg"/>
+        <h1 class="bottom">Want to know more about my country?</h1>
+        <form action="page2.html" method="get"> 
+            <button class="location" type="submit">Location</button>
+            <button class="cities" type="submit" formaction="page3.html">Biggest cities</button>
+            <button class="language" type="submit" formaction="page4.html">Language</button>
+        </form>
+    </body>
+</html>

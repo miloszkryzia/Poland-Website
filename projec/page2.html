@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<link href="page2.css" rel="stylesheet" type="text/css">
+<head>
+    <title>Location of Poland</title>
+    <script>
+            function startTime() {
+             var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+              var s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =
+              h + ":" + m + ":" + s;
+              var t = setTimeout(startTime, 500);
+            }
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+        </script>
+</head>
+<body onload="startTime()" style="background-color:#610B0B">
+    <div id="txt"></div>
+    <form action="projec.html" method="get">
+        <button class="home" type="submit">Home</button>
+    </form>
+    <h1 class="head">Location of Poland</h1>
+    <h1>Poland is located in East-Central Europe,</h1>
+    <h1>to the East of Germany.</h1>
+    <h1>On the world map:</h1>
+    <img src="worldmap.jpg">
+    <h1>On the map of Europe:</h1>
+    <img src="europemap.jpg">
+    <form action="page2.html" method="get"> 
+        <button class="location" type="submit">Location</button>
+        <button class="cities" type="submit" formaction="page3.html">Biggest cities</button>
+        <button class="language" type="submit" formaction="page4.html">Language</button>
+    </form>
+</body>
+</html>

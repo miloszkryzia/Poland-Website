@@ -1,0 +1,71 @@
+.head {
+    color:#FF0000;
+    text-align:center;
+}
+h1 {
+    color:white;
+    text-align:center;
+}
+.bottom {
+    font-size:medium;
+    color:white;
+    text-align:center;
+    
+}
+img {
+    margin: auto;
+  width: 50%;
+  display: block;
+  border:2px solid black;
+}
+.location {
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  color: #610B0B;
+  background-color:white;
+  border: none;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+    
+}
+.cities {
+    float: none;
+  position: absolute;
+  left: 25%;
+  transform: translate(-50%, 10%);
+  color: #610B0B;
+  background-color:white;
+  border: none;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+    
+}
+.language {
+    float: none;
+  position: absolute;
+  left: 75%;
+  transform: translate(-50%, 10%);
+  color: #610B0B;
+  background-color:white;
+  border: none;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+div{
+    color:white;
+    transform:translate(70%,100%);
+}
